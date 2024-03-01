@@ -2,8 +2,10 @@ import java.util.*;
 public class Arrange_Array_AscendingOrder{
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the N value : ");
         int n=sc.nextInt();
         int a[]=new int[n];
+        System.out.print("Enter the Array elements : ");
         for(int i=0;i<n;i++){
             a[i]=sc.nextInt();
         }
@@ -16,6 +18,10 @@ public class Arrange_Array_AscendingOrder{
                     a[j]=temp;
                 }
             }
+        }
+        System.out.print("After Sorting : ");
+        for(int i=0;i<n;i++){
+            System.out.print(a[i]+" ");
         }
     }
 }
