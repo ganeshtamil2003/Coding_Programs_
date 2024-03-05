@@ -2,9 +2,10 @@
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
-int minimum(int n,int a[]);
-int main() {
 
+int minimum(int n,int a[]);
+
+int main() {
     int n;
     scanf("%d",&n);
     int a[n];
