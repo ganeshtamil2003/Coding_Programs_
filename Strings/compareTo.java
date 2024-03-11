@@ -1,5 +1,5 @@
 import java.io.*;
-class compareTo.java{
+class compareTo{
     public static void main(String[] args) {
         String s1="JAVA";
         String s2="JAVA";
