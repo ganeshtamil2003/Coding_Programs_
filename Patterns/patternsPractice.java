@@ -1,6 +1,6 @@
 class patternsPractice{
     public static void main(String args[]){
-        pattern5(5);
+        pattern6(5);
     }
     static void pattern1(int n){
         for(int row=1;row<=n;row++){
@@ -39,6 +39,32 @@ class patternsPractice{
             int colsinrow=row>n?2*n-row:row;
             for(int col=0;col<colsinrow;col++){
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    } 
+    static void pattern28(int n){
+        for(int row=0;row<2*n;row++){
+            int colsinrow=row>n?2*n-row:row;
+            int spaces=n-colsinrow;
+            for(int s=0;s<spaces;s++){
+                System.out.print(" ");
+            }
+            for(int col=0;col<colsinrow;col++){
+                System.out.print("* ");
+
+            }
+            System.out.println();
+        }
+    }
+    static void pattern6(int n){
+        for(int row=1;row<=n;row++){
+            int spaces=n-row;
+            for(int s=0;s<spaces;s++){
+                System.out.print(" ");
+            }
+            for(int col=1;col<=row;col++){
+                System.out.print("*");
             }
             System.out.println();
         }
