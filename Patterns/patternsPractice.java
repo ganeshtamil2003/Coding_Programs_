@@ -19,12 +19,15 @@ class patternsPractice{
         }
     } 
     static void pattern3(int n){
-        for(int row=0;row<=n;row++){
+        for(int row=0;row<n;row++){
             for(int col=0;col<n-row;col++){
                 System.out.print("* ");
             }
             System.out.println();
         }
+    }
+    static void pattern(int n){
+        
     } 
     static void pattern4(int n){
         for(int row=1;row<=n;row++){
@@ -44,7 +47,7 @@ class patternsPractice{
         }
     } 
     static void pattern28(int n){
-        for(int row=0;row<2*n;row++){
+        for(int row=1;row<2*n;row++){
             int colsinrow=row>n?2*n-row:row;
             int spaces=n-colsinrow;
             for(int s=0;s<spaces;s++){
